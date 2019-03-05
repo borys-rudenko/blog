@@ -35,16 +35,16 @@ markdown: kramdown
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-# plugins:
-#   - jekyll-paginate
+plugins:
+  - jekyll-include-cache
 #   - jekyll-sitemap
 #   - jekyll-gist
 #   - jekyll-feed
 #   - jemoji
 #   - jekyll-include-cache
 #
-# whitelist:
-#   - jekyll-paginate
+whitelist:
+  - jekyll-include-cache
 #   - jekyll-sitemap
 #   - jekyll-gist
 #   - jekyll-feed
