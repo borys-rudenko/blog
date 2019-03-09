@@ -16,6 +16,5 @@ excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef 
 intro:
   - excerpt: 'This part of blog very nice perfect amazing description'
 
-<!-- entries_layout: grid -->
 
 ---
