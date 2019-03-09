@@ -8,51 +8,96 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 include: ["_pages"]
+locale: "en"
 email: borys.rudenko@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "Blog and portfolio of Borys Rudenko, Lead Java Developer"
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://brudenko.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://brudenko.com"
 github_username:  borys-rudenko
 title: "B Rudenko"
 repository: "borys-rudenko/borys-rudenko.github.io"
 logo: "/assets/images/borys.jpg"
 
-# Build settings
-markdown: kramdown
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-include-cache
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-#   - jemoji
-
-# whitelist:
-#   - jekyll-include-cache
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-#   - jemoji
-#   - jekyll-include-cache
 
 
+markdown: kramdown
 
+#Custom settings
+words_per_minute: 200
 paginate: 10
 paginate_path: /page:num/
 search: true
 breadcrumbs: false
+timezone: Europe/Amsterdam
+# URL like domain.com/article-name
+permalink: /:title
+
+# Site Author
+author:
+  name             : "Borys Rudenko"
+  avatar           : "/assets/images/borys.jpg"
+  bio              : "Lead Java Developer"
+  location         : "Amsterdam, NL"
+  email            : borys.rudenko@gmail.com
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "borys-rudenko"
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "borys-rudenko-7284848b"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : "2987011/borys-rudenko"
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
+# # Site Footer
+# footer:
+  # links:
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     url: "https://instagram.com/"
+  #   - label: "Facebook"
+  #     icon: "fab fa-fw fa-facebook-square"
+  #     url: "https://instagram.com/"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://instagram.com/"
+  #   - label: "GitLab"
+  #     icon: "fab fa-fw fa-gitlab"
+  #     url: "https://instagram.com/"
+  #   - label: "Bitbucket"
+  #     icon: "fab fa-fw fa-bitbucket"
+  #     url: "https://instagram.com/"
+  #   - label: "Instagram"
+  #     icon: "fab fa-fw fa-instagram"
+  #     url: "https://instagram.com/"
+
+#
+#
+# collections:
+#   projects:
+#     output: true
+#     permalink: /:collection/:name/
+#
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -65,64 +110,6 @@ breadcrumbs: false
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Site Author
-author:
-  name             : "Borys Rudenko"
-  avatar           : "/assets/images/borys.jpg"
-  bio              : "Java Developer"
-  location         : "Amsterdam, NL"
-  email            : borys.rudenkO@gmail.com
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-# # Site Footer
-# footer:
-#   links:
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       url: "https://instagram.com/"
-#     - label: "Facebook"
-#       icon: "fab fa-fw fa-facebook-square"
-#       url: "https://instagram.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://instagram.com/"
-#     - label: "GitLab"
-#       icon: "fab fa-fw fa-gitlab"
-#       url: "https://instagram.com/"
-#     - label: "Bitbucket"
-#       icon: "fab fa-fw fa-bitbucket"
-#       url: "https://instagram.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
-
-# URL like domain.com/article-name
-permalink: /:title
-#
-#
-# collections:
-#   projects:
-#     output: true
-#     permalink: /:collection/:name/
-#
 
 # Defaults
 defaults:
@@ -132,25 +119,8 @@ defaults:
       type: posts
     values:
       layout: single
-      # classes: wide
+      share: true
+      related: true
       author_profile: true
       read_time: true
       comments: # true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _projects
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: single
-      # classes: wide
-      author_profile: true
-      share: true
