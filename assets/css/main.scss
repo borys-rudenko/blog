@@ -1,0 +1,154 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* default syntax highlighting (base16) */
+$base00: #263238;
+$base01: #2e3c43;
+$base02: #314549;
+$base03: #546e7a;
+$base04: #b2ccd6;
+$base05: #eeffff;
+$base06: #eeffff;
+$base07: #ffffff;
+$base08: #f07178;
+$base09: #f78c6c;
+$base0a: #ffcb6b;
+$base0b: #c3e88d;
+$base0c: #89ddff;
+$base0d: #82aaff;
+$base0e: #c792ea;
+$base0f: #ff5370;
+
+
+// // Color tweaks
+// $theme-orange               : #d28445 !default;
+// $theme-grey                 : #2c3e50 !default;
+//
+// $body-color                 : #fff !default;
+// $navigation-color           : $theme-grey !default;
+// $link-color                 : white !default;
+// $link-color-hover           : grey !default;
+// $masthead-link-color        : #fff !default;
+// $masthead-link-color-hover  : $theme-orange !default;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+
+/*
+   POST PREVIEW
+   ==========================================================================
+*/
+h3.archive__date {
+  margin: 0 0 0 0;
+  font-size: $type-size-6;
+  color: $light-gray;
+  font-style: normal;
+  border-bottom: none;
+
+  + .list__item .archive__item-title {
+    margin-top: 0em;
+  }
+}
+
+.archive__item-title {
+  margin-top: 0em;
+  color: white ;
+}
+
+.archive__item-title a{
+  color: #D3D3D3;
+  // color: white;
+}
+
+.results .archive__item-title a{
+  color: grey;
+}
+
+.archive__item_titlecontainer {
+  // border-radius: $border-radius
+  color:#F5F5F5;
+
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 8px;
+  width:100%;
+}
+
+.archive__item-teaser, .archive__item-teaser-imageclickhandler {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 240px;
+  width: 100%;
+}
+
+.archive__item-teaser-imageclickhandler {
+  position: absolute;
+  top: 0;
+}
+
+.archive__item-excerpt {
+  display: block;
+}
+
+.archive__item:hover {
+  .archive__item-title {
+    color: $lighter-gray  ;
+    text-decoration: none;
+  }
+}
+
+.list__item {
+  margin-bottom: 2em;
+}
+
+/*
+   REMOVE HEIGHT RESTRICTION SIDEBAR
+   ==========================================================================
+*/
+.sidebar {
+  &.sticky {
+    height: auto;
+  }
+}
+
+/*
+   PAGE
+   ==========================================================================
+*/
+   .page__content {
+     h2 {
+       border-bottom: none;
+     }
+
+     a:not(.btn) {
+       text-decoration: none;
+     }
+   }
+
+
+/*
+NAVIGATION BAR
+==========================================================================
+*/
+.site-title {
+  font-weight: normal;
+}
+
+// .masthead {
+//   background-color: #D3D3D3;
+//   border-bottom: 1px solid #D3D3D3;
+// }
+//
+// .greedy-nav {
+//   background: #D3D3D3;
+//   text-transform: uppercase;
+// }

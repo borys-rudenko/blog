@@ -1,8 +1,8 @@
 ---
-title:  "Blog"
+title:  "Workshops"
 layout: category
-taxonomy: blog
-permalink: /blog
+taxonomy: workshop
+permalink: /workshops
 author_profile: true
 comments: true
 <!-- entries_layout: grid -->
@@ -15,7 +15,5 @@ header:
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 intro:
   - excerpt: 'This part of blog very nice perfect amazing description'
-
-<!-- entries_layout: grid -->
 
 ---

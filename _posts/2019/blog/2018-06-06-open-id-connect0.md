@@ -1,23 +1,17 @@
 ---
-title: "Open Id Connect"
+title: "Blog 3 - Open Id Connect2"
 layout: single
+categories: blog
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 toc: true
 toc_label: My Table of Conntents
 toc_sticky: true
+<!-- entries_layout: grid -->
 
-excerpt: "This post should [...]"
 header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
-  overlay_filter: rgba(255, 0, 0, 0.5)
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  actions:
-    - label: "Download"
-      url: "https://github.com"
+  teaser: assets/images/modul.jpg
 
-<!-- header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg -->
+
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "test-draft"
+title:  "DRAFT !!!"
 date:   2019-03-04 11:59:55 +0100
 categories: blog
 tags: [hot, summer]

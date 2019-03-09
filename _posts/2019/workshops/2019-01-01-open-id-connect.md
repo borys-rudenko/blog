@@ -1,33 +1,15 @@
 ---
-title: "Open Id Connect"
+title: "Workshop - Open Id Connect"
 layout: single
+categories: workshop
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 toc: true
 toc_label: My Table of Conntents
 toc_sticky: true
 
-excerpt: "This post should [...]"
 header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
-  overlay_filter: rgba(255, 0, 0, 0.5)
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  actions:
-    - label: "Download"
-      url: "https://github.com"
-
-<!-- header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg -->
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  teaser: assets/images/figure.jpg
 ---
-
-
 
 ## HTML Elements
 
