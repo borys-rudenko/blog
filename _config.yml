@@ -13,17 +13,19 @@ locale: "en"
 email: borys.rudenko@gmail.com
 description: "Blog and portfolio of Borys Rudenko, Lead Java Developer"
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://brudenko.com"
+url: https://brudenko.com
 github_username:  borys-rudenko
 title: "B Rudenko"
 repository: "borys-rudenko/borys-rudenko.github.io"
 logo: "/assets/images/borys.jpg"
+
 
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-include-cache
+  - jekyll-sitemap
 
 
 markdown: kramdown
@@ -75,6 +77,8 @@ comments:
   disqus:
     shortname: "brudenko-com-1"
 
+# SEO (Maybe not needed)
+# google-site-verification: "Le0L-n9qFb4lNEjW3x3951DXYKxSXqdZqR2iUIbjxWI"
 
 # Analytics
 analytics:
