@@ -6,7 +6,7 @@ excerpt: "Foo Bar design system including logo mark, website design, and brandin
 categories: workshop
 
 header:
-  teaser: assets/images/main_blog.jpg
+  teaser: assets/images/workshop.jpg
 ---
 
 

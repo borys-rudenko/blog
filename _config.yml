@@ -15,9 +15,9 @@ description: "Blog and portfolio of Borys Rudenko, Lead Java Developer"
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: https://brudenko.com
 github_username:  borys-rudenko
-title: "B Rudenko"
+title: "Borys Rudenko"
 repository: "borys-rudenko/borys-rudenko.github.io"
-logo: "/assets/images/borys.jpg"
+logo: "/assets/images/logo.png"
 
 
 # theme: minimal-mistakes-jekyll

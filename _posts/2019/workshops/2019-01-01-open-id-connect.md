@@ -8,7 +8,7 @@ toc_label: My Table of Conntents
 toc_sticky: true
 
 header:
-  teaser: assets/images/figure.jpg
+  teaser: assets/images/main3.jpg
 ---
 
 ## HTML Elements

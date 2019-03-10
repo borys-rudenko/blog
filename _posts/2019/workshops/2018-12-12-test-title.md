@@ -12,8 +12,8 @@ toc_sticky: true
 
 
 header:
-  teaser: assets/images/main_projects.jpg
-  overlay_image: /assets/images/figure.jpg
+  teaser: assets/images/workshop.jpg
+  overlay_image: /assets/images/workshop.jpg
   <!-- overlay_filter: 0.5 -->
   <!-- overlay_filter: rgba(255, 0, 0, 0.5) -->
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
