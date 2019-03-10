@@ -68,6 +68,13 @@ author:
   xing             :
   youtube          :
 
+
+# Add Disqus comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "brudenko-com-1"
+
 # # Site Footer
 # footer:
   # links:
@@ -123,4 +130,4 @@ defaults:
       related: true
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
