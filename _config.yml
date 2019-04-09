@@ -11,7 +11,7 @@
 include: ["_pages"]
 locale: "en"
 email: borys.rudenko@gmail.com
-description: "Blog and portfolio of Borys Rudenko, Lead Java Developer"
+description: "Blog and portfolio of Borys Rudenko, Principal Java Developer"
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: https://brudenko.com
 github_username:  borys-rudenko
@@ -45,7 +45,7 @@ permalink: /:title
 author:
   name             : "Borys Rudenko"
   avatar           : "/assets/images/borys.jpg"
-  bio              : "Lead Java Developer"
+  bio              : "Principal Java Developer"
   location         : "Amsterdam, NL"
   email            : borys.rudenko@gmail.com
   bitbucket        :
@@ -65,7 +65,7 @@ author:
   stackoverflow    : "2987011/borys-rudenko"
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "BorysRudenko"
   vine             :
   weibo            :
   xing             :
