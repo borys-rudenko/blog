@@ -30,14 +30,14 @@ You also can check my resume in details in my [LinkedIn][LinkedIn] profile.
 ## About this blog
 In this blog I am going to share my experience about different technologies, agile processes and everything which every developer is normally facing during his work.
 
-In the ***Blog*** section you can find different articles about different topics. Normally I am trying to keep them short and in same time as much informative as possible.
+In the [Blog][Blog] section you can find different articles about different topics. Normally I am trying to keep them short and in same time as much informative as possible.
 
-In the ***Workshop*** part of this blog I'll place practical information together with application skeletons and exercises.
+In the [Workshops][Workshops] part of this blog I'll place practical information together with application skeletons and exercises.
 
 If you want to know all technical details about this blog - please check my blog post: [How I build this blog][How I build this blog]
 
 ## Contact me
-I am always open to discussion, so you are always welcome to left some comments and discuss if you agree or disagree with me.
+I am always open for discussion, so you are always welcome to left some comments and discuss if you agree or disagree with me.
 
 If you have any other questions, please feel free to contact me:
 
@@ -49,4 +49,6 @@ If you have any other questions, please feel free to contact me:
 
 
 [LinkedIn]: https://www.linkedin.com/in/borys-rudenko-7284848b/
+[Blog]: /blog
+[Workshops]: /workshops
 [How I build this blog]: /how-i-built-my-blog
