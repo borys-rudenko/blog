@@ -17,12 +17,14 @@ And please don't hesitate to ask me if you have any questions."
 
 
 ## About myself
-Hey everyone. My name is _Borys Rudenko_. I am passionate software developer living in Amsterdam, The Netherlands.
+Hi there. My name is _Borys Rudenko_. I am passionate software developer living in Amsterdam, The Netherlands.
 I am working in IT industry for more than 10 years and I spend my days in many different areas of software development, like designing various banking/enterprise solutions, technical staff leading, writing code, etc.
 
 
 My philosophy on learning and using new technologies is always the same: don't be scary, experiment, write pet projects, fail, fix, fail again, fix again.
-Reading a lot of books and all possible materials before you start in order to be prepared to everything will not give you a good result. You should find a learning/coding balance here. Practice without theory is blind. Theory without practice is dead.
+Reading a lot of books and all possible materials before you start in order to be prepared to everything will not give you a good result. You should find a learning/coding balance here.
+
+> Practice without theory is blind. Theory without practice is dead.
 
 
 You also can check my resume in details in my [LinkedIn][LinkedIn] profile.

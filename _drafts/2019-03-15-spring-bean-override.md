@@ -5,6 +5,7 @@ categories: blog
 
 header:
   teaser: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
+  overlay_image: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
 
 ---
 In this article I am going to talk about tricky spring boot bean definition overriding mechanism.
