@@ -19,7 +19,7 @@ Finally I investigated all possible options about how can I build my blog and ke
 In the end I choose [Jekyll](http://jekyllrb.com/) and [GitHub pages](https://pages.github.com) as a hosting platform.
 And I am going to give you an overview what you can build using this technologies and how I did it.
 
-## Requirenmenst and investigation
+## Requirements and investigation
 
 Keeping it simple, I only had few requirements for my personal blog.
 
@@ -31,7 +31,7 @@ Keeping it simple, I only had few requirements for my personal blog.
 - Simple hosting and deployment process of new posts
 - Free
 
-Everyone know that the easiest and fastest type of web site is just a **static** web site. The main advantages is simplicity, speed, easy testing, etc.
+Everyone know that the easiest and fastest type of web site is just a **static** web site. The main advantages are simplicity, speed, easy testing, etc.
 But usually modifying of such type of websites become a hell, especially if you want to have more than 1 page and also need some nice feature like pagination, categories, tags and so on.
 Thats why the best option here would be to use static site generators. They give you super nice possibility to use Markdown and keep separately your texts and the rest with all power of static site.
 
@@ -50,9 +50,9 @@ Out of the box your Jekyll website will be just simple. So if it's okay for you 
 As you can see there are a lot of free/paid options which you can choose from based on your purpose.
 For my web site I choose this template: [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)
 
-I strongly suggest you to read carefully the documentation which is going with template in order to understand how it works and features it provide to you out of the box. Of course you can always modify it based on your needs, but it would be better to reuse as much as possible in order to keep it simple and to have possibility to upgrade easily to new versions of template.
+I strongly suggest you to read carefully the documentation which is going with template in order to understand how it works and features it provides to you out of the box. Of course you can always modify it based on your needs, but it would be better to reuse as much as possible in order to keep it simple and to have possibility to upgrade easily to new versions of template.
 
-Installation can be different and here is possible options:
+Installation can be different and here are possible options:
 - [gem-based theme installation](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes)
 - [remote theme installation](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
 - forking or directly copying all of the theme files into your own project.
@@ -85,10 +85,11 @@ By default yours web site will be available on URL like this: **'username'.githu
 You can also easily buy any domain register your GitHub site there. See below the detailed explanation how to do it.
 
 Note: You can also do the same if you are using GitLab.
+{: .notice} 
 
 ## Custom domain
 If you want to have a custom name for yours blog instead of **'username'.github.io** - you can easily do this.
-Here is steps which you should follow:
+Here are steps which you should follow:
 1. Buy domain. You can use this web sites: [Godaddy](https://www.godaddy.com), [namecheap](https://www.namecheap.com)
 2. Create CNAME file in github root folder of your repo and put your domain into it
 3. Configure hosting with github pages and namecheap. [Tutorial](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages) for Namecheap as an example
@@ -96,7 +97,7 @@ Here is steps which you should follow:
 
 ## Comments
 Apparently we are building blog - it's highly desirable to have possibility to add comments. And because we are building static web site - we are highly limited in technologies which we can use for this.
-Luckily we have several options how to do it and Jekyll help us with this as well.
+Luckily we have several options how to do it and Jekyll helps us with this as well.
 
 Jekyll Minimal mistakes template provide support for next popular commenting platforms:
 [Disqus](https://disqus.com), [Discourse](https://www.discourse.org), [Facebook Comments](https://developers.facebook.com), [Staticman](https://staticman.net), [Utterances](https://utteranc.es).
