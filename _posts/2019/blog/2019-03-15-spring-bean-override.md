@@ -210,8 +210,8 @@ So it almost impossible to predict which bean will override another, especially 
 As far as you can see from this example this behaviour is totally unpredictable and it's super easy to make a mistake here.
 And there is only one rule here I can see:
 
-**Bean with the same name as another one, which is processed later, overrides the older one, but it's not clear at all which one will be processed later.**
-{: .notice}
+> **Bean with the same name as another one, which is processed later, overrides the older one, but it's not clear at all which one will be processed later.**
+
 
 Mechanism which caused us so much confusion is called **bean overriding**. It is used when Spring encounters a declaration of a bean with the same name as another bean already existing in the context.
 
