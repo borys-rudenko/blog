@@ -1,19 +1,26 @@
 ---
 title:  "Spring Boot: Bean definition overriding"
-date:   2019-03-15 00:00:00 +0100
+excerpt: In this article I am going to talk about tricky spring boot bean definition overriding mechanism.
+date:   2019-08-01 00:00:00 +0100
 categories: blog
+toc: true
+toc_label: On this pages
+toc_sticky: true
 
 header:
   teaser: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
   overlay_image: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
 
 ---
-In this article I am going to talk about tricky spring boot bean definition overriding mechanism.
 
+## Intro
 
-Just to give more clarity here, please take a look on the next simple example and what do you think will be printed in console?
+Just to give a bit more clarity about the topic, let's start from the small quiz.
+Please take a look on the next simple example.
 
-So we have 2 configurations, which instantiating bean with name **beanName** and in main application we just printing the value of this bean (very important that both of them has same name).
+So we have 2 configurations, which instantiating bean with name **beanName** and in main application we just printing the value of this bean (very important that both of them have same name).
+
+So what do you think will be printed?
 
 ## Example 1
 ```java
@@ -48,9 +55,9 @@ class config2 {
 ```
 
 ### Possible answers:
-1. "BEAN1" will be printed. Probably because it has @Primary annotation and even @Order
-2. "BEAN2" will be printed.
-3. Exception will be thrown, because it's not allowed to have several beans with same name.
+1. '_BEAN1_' will be printed. Probably because it has @Primary annotation and even @Order
+2. '_BEAN2_' will be printed.
+3. _Exception_ will be thrown, because it's not allowed to have several beans with same name.
 4. Any other version?
 
 
@@ -96,10 +103,10 @@ So in `spring boot 2` default behaviour was changed and bean overriding is not a
 
 From now they are working in a same way.
 
-But this is not the end.
+But this is not the end. Let's check Example 2:
 
 
-## Let's check Example 2
+## Example 2
 ```java
 @SpringBootApplication
 public class Application {
@@ -129,7 +136,7 @@ class a_config2 {
 }
 ```
 
-So it's totally the same, **BUT** the name of second configuration is different: now it's `a_config2`, but could be let's say `config0` as well.
+So it's totally the same, **BUT** the name of second configuration class is different: now it's `a_config2`, but could be let's say `config0` as well.
 
 And now if we run this code the result will be **BEAN1**
 
@@ -138,9 +145,9 @@ And now if we run this code the result will be **BEAN1**
 
 1. Spring completely ignoring any additional annotations for beans with same names, like `@Primary` and `@Order`. They don't change anything in this case.
 2. Spring processing @Configurations in unpredictable way. In our **Example 2** it's ordering config classes **BY NAME**, so based on that one can override another, which we saw in **Example 1** and **Example 2**.
-3. In more complicated application it's possible to have additional configurations in `xml/loaded with @Import(Configuration.class)/groovy/whatever`. And in this case behaviour will be different again I have no clue which one will be loaded latest and override the previous one. And I didn't find any strong  explanations in Spring docs about this.
+3. In more complicated application it's possible to have additional configurations in `xml loaded with @Import(Configuration.class)/groovy/whatever`. And in this case behaviour will be different again. I have no clue which one will be loaded latest and override the previous one. And I didn't find any strong  explanations in Spring docs about this.
 
-What I found, that @Import is always loaded first and XML configuration always latest, so it will override everything else. And names doesn't matter in this case.
+What I found, that `@Import` is always loaded first and `XML` configuration always latest, so it will override everything else. And names doesn't matter in this case.
 
 Please check latest example:
 
@@ -201,16 +208,19 @@ So it almost impossible to predict which bean will override another, especially 
 
 ## Summary
 As far as you can see from this example this behaviour is totally unpredictable and it's super easy to make a mistake here.
-And there is only one rule here I can see - **bean with the same name as another one, which is processed later, overrides the older one, but it's not clear at all which one will be processed later.**
+And there is only one rule here I can see:
+
+**Bean with the same name as another one, which is processed later, overrides the older one, but it's not clear at all which one will be processed later.**
+{: .notice}
 
 Mechanism which caused us so much confusion is called **bean overriding**. It is used when Spring encounters a declaration of a bean with the same name as another bean already existing in the context.
 
 
-Real example how I faced with this problem. We had a custom configuration for restTemplate. And name was just **restTemplate**.
+Real example how I faced with this problem. We had a custom configuration for spring RestTemplate. And name was just **restTemplate**.
 After some point of time we got one additional **restTemplate** with exactly same name from configuration from external dependency.
-And of course it happened that external restTemplate override our own with our custom "tuning".
+And of course it happened that external **restTemplate** override our own with our custom "tuning".
 
-After long investigation I found how spring managing such situations.
+After investigation I found how spring managing such situations.
 
 ## Solution
 1. First of all I strongly suggest you to enable this configuration:
@@ -257,4 +267,4 @@ So in this case config2.class will not be scanned, so we will have only one **be
 
 
 
-PS: If you find some gaps or have anything to add or discuss - please feel free to add your thoughts in comments.
+PS: If you find some gaps or have anything to add or discuss - please feel free to put your thoughts in comments.
