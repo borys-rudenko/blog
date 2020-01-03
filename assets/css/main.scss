@@ -62,6 +62,20 @@ $base0f: #ff5370;
 
 
 /*
+   Footer size
+   ==========================================================================
+*/
+.page__footer footer {
+  margin-top: 0.1em;
+  padding: 0 1em 0.5em;
+}
+
+.page__footer-follow li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/*
    SYNTAX HIGHLIGTER CUSTOMISATION
    ==========================================================================
 */
