@@ -8,8 +8,8 @@ toc_label: On this pages
 toc_sticky: true
 
 header:
-  teaser: assets/images/blog/2019/how-to-setup-dev-env-intellij/how-to-setup-dev-env-intellij-teaser.jpg
-  overlay_image: assets/images/blog/2019/how-to-setup-dev-env-intellij/how-to-setup-dev-env-intellij.png
+  teaser: assets/images/2019/blog/how-to-setup-dev-env-intellij/how-to-setup-dev-env-intellij-teaser.jpg
+  overlay_image: assets/images/2019/blog/how-to-setup-dev-env-intellij/how-to-setup-dev-env-intellij.png
 ---
 
 # Intro
@@ -153,19 +153,19 @@ So, let's open the **_project2-multimaven_** project in the IDE. In order to do 
 
 So now in the Maven toolbar you can see all submodules from our project.
 
-![Maven project structure](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_1_maven_project_1.png)
+![Maven project structure](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_1_maven_project_1.png)
 
 
 Let's add the second **_project1-springboot_** into the same workspace. So in the maven plugin we just click **+** and select a **pom.xml** file from a project.
 Now in the **_Project_** toolbar we can see our 2 projects and also in the _Maven_ toolbar we can see all maven modules from all subprojects.
 
-![Maven project 2 structure](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_2_maven_project_2.png)
+![Maven project 2 structure](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_2_maven_project_2.png)
 
 As you can see right now it's not really informative, because all our projects and modules just listed without any grouping or structure, so it's really hard to find and build a correct one and understand to which project it belongs.
 
 So let's improve it immediately. If you click **Settings** icon in the **_Maven_** plugin and click **Group Modules** - our projects and modules will be regrouped:
 
-![Maven project groupped](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_3_maven_projects_groupped.png)
+![Maven project groupped](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_3_maven_projects_groupped.png)
 
 Much better, because now all maven modules are grouped in a logical hierarchy. First by project and after that by submodules.
 
@@ -193,7 +193,7 @@ $ mvn package -Pskip-test
 ```
 Or we can simply activate/deactivate it with _**Maven**_ plugin, because now we can see it in the list of **Profiles**:
 
-![Maven project profiles](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_4_maven_projects_profiles.png)
+![Maven project profiles](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_4_maven_projects_profiles.png)
 
 So you can use this toolbar for quick execute of your build tasks. You can do exactly the same manually using terminal of course, so it's up to you what to choose. Later I'll show how to execute build with embedded [terminal](#terminal).
 
@@ -220,8 +220,8 @@ Let's imagine that it's a complex data and we want to manually check DB and anal
 But we can do it with **Database** IntelliJ plugin. For this just open the plugin and choose **_New -> Data source -> H2_** and specify connection details as we have in our properties file.
 
 <figure class="half">
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_5_db_connection.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_5_db_connection.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_5_db_connection.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_5_db_connection.png">
     </a>
     <figcaption>H2 DB embedded connection example(click to zoom)</figcaption>
 </figure>
@@ -234,11 +234,11 @@ Using this UI you can easily add another row, modify or delete the existing one 
 If you want to execute something manually - you can just open separate _**SQL console**_ from **Database** plugin and execute any query you want.
 
 <figure class="half">
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_6_db_editor_1.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_6_db_editor_1.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_6_db_editor_1.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_6_db_editor_1.png">
     </a>
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_7_db_editor_2.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_7_db_editor_2.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_7_db_editor_2.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_7_db_editor_2.png">
     </a>
     <figcaption>DB SQL editor(click to zoom)</figcaption>
 </figure>
@@ -261,15 +261,15 @@ Let's just play a bit with our projects and check main VCS integration features.
 First , we have **Git branches** plugin. It's located it right bottom corner of the IDE and you can see current branch there. Seems we have multi-project setup, the branch name will change automatically based on an open file.
 Clicking on branch name you will see a menu, where you can find all your projects and current branches. Also from this menu you can create a new branch or checkout to any existing one. Here is a short illustration:
 
-![VCS branching](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_8_vcs_branches.png)
+![VCS branching](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_8_vcs_branches.png)
 
 The next super useful thing would be default **Version control** plugin. If you click on it you can see all uncommitted local changes, and also you can see commits and information about all your projects. You can filter commits by repo/date/user/name or any other criteria. If you want you can do cherry-pick/patches/revert/merge/rebase/etc of commits from here as well. And of course you can easily see and navigate all particular commit changes.
 
 Git is integrated into a **Context menu** as well. So on any file doing right mouse button click you will find **_Git_** submenu, which gives you a possibility to show commit history of this file or compare it with the same file from another branch. Or you can just do _git pull_ from here and this will execute git pull for you only for repo (which this file belongs to)
 
 <figure>
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_9_vcs_plugin.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_9_vcs_plugin.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_9_vcs_plugin.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_9_vcs_plugin.png">
     </a>
     <figcaption>OOTB VCS Plugin (click to zoom)</figcaption>
 </figure>
@@ -279,8 +279,8 @@ in the Annotate section and you will see all changes from that commit:
 
 
 <figure>
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_10_vcs_annotate.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_10_vcs_annotate.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_10_vcs_annotate.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_10_vcs_annotate.png">
     </a>
     <figcaption>VCS Annotation feature(click to zoom)</figcaption>
 </figure>
@@ -300,7 +300,7 @@ So if you have something very specific or you just want to use maven/vcs without
 
 You can execute any command you want even not related to the project. The benefit here is that you don't need to switch between applications.
 
-![Terminal](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_11_terminal.png)
+![Terminal](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_11_terminal.png)
 
 ## Http client
 
@@ -317,11 +317,11 @@ So, let's start our **_Project1SpringbootApplication_** and go to **Tools** menu
 We can specify all parameters, headers, cookies, request body, etc and execute our query.
 
 <figure class="half">
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_14_rest_client_1.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_14_rest_client_1.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_14_rest_client_1.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_14_rest_client_1.png">
     </a>
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_15_rest_client_2.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_15_rest_client_2.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_15_rest_client_2.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_15_rest_client_2.png">
     </a>
     <figcaption>HTTP Client demo(click to zoom)</figcaption>
 </figure>
@@ -332,8 +332,8 @@ But the main idea, that now we can store our requests in the separate **.http** 
 So we can keep our request collections under source control and easily recheck our functionality. We can also extract some environment variables into a separate files, so we can reuse our **.http** files with different configurations. It looks very similar to Postman.
 
 <figure class="half">
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_16_rest_client_3.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_16_rest_client_3.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_16_rest_client_3.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_16_rest_client_3.png">
     </a>
     <figcaption>New format of HTTP Client(click to zoom)</figcaption>
 </figure>
@@ -347,7 +347,7 @@ Add a new server with **+** button. Enter the name and select a type.
 Now you can enter _host_, _username_ and _password_ (or key pair).
 Next time you'll select _**Tools** -> **Start SSH session**_ there should be your server name. And you can create several different connections.
 
-![SSH Tool](/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_12_ssh_tool.png)
+![SSH Tool](/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_12_ssh_tool.png)
 
 So if you are working with SSH you can specify all connection settings inside the IDE and have quick access to them.
 
@@ -359,8 +359,8 @@ So just for example there are _markdown/uml integration/docker/jira/chekstyle_ p
 Here you can decide by yourself, based on which features and technologies are you using on your project.
 
 <figure>
-    <a href="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_13_plugins.png">
-    <img src="/assets/images/blog/2019/how-to-setup-dev-env-intellij/screen_13_plugins.png">
+    <a href="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_13_plugins.png">
+    <img src="/assets/images/2019/blog/how-to-setup-dev-env-intellij/screen_13_plugins.png">
     </a>
     <figcaption>Docker plugin installation example(click to zoom)</figcaption>
 </figure>

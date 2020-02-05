@@ -8,8 +8,8 @@ toc_label: On this pages
 toc_sticky: true
 
 header:
-  teaser: assets/images/blog/2019/how-i-built-my-blog/how-i-built-my-blog-teaser.jpg  
-  overlay_image: assets/images/blog/2019/how-i-built-my-blog/how-i-built-my-blog.jpg  
+  teaser: assets/images/2019/blog/how-i-built-my-blog/how-i-built-my-blog-teaser.jpg  
+  overlay_image: assets/images/2019/blog/how-i-built-my-blog/how-i-built-my-blog.jpg  
 ---
 
 ## Intro
@@ -85,7 +85,7 @@ By default yours web site will be available on URL like this: **'username'.githu
 You can also easily buy any domain register your GitHub site there. See below the detailed explanation how to do it.
 
 Note: You can also do the same if you are using GitLab.
-{: .notice} 
+{: .notice}
 
 ## Custom domain
 If you want to have a custom name for yours blog instead of **'username'.github.io** - you can easily do this.

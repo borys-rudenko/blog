@@ -8,8 +8,8 @@ toc_label: On this pages
 toc_sticky: true
 
 header:
-  teaser: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
-  overlay_image: assets/images/blog/2019/spring-bean-override/spring-bean-override.jpg
+  teaser: assets/images/2019/blog/spring-bean-override/spring-bean-override.jpg
+  overlay_image: assets/images/2019/blog/spring-bean-override/spring-bean-override.jpg
 
 ---
 
