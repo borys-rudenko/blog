@@ -43,9 +43,16 @@ I am always open for discussion, so you are always welcome to left some comments
 
 If you have any other questions, please feel free to contact me:
 
-<form class="page__contact" method="POST" action="https://formspree.io/borys.rudenko@gmail.com">
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Your message"></textarea>
+<form class="page__contact" action="https://formspree.io/f/meqplnrg" method="POST">
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
   <button type="submit" class="btn btn--success">Send</button>
 </form>
 
